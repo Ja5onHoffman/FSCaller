@@ -10,7 +10,6 @@
 		31DF5FB31A6E9308002B6C44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF5FB21A6E9308002B6C44 /* main.m */; };
 		31DF5FB61A6E9308002B6C44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF5FB51A6E9308002B6C44 /* AppDelegate.m */; };
 		31DF5FBE1A6E9308002B6C44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DF5FBD1A6E9308002B6C44 /* Images.xcassets */; };
-		31DF5FC11A6E9308002B6C44 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DF5FBF1A6E9308002B6C44 /* LaunchScreen.xib */; };
 		31DF5FCD1A6E9308002B6C44 /* FSCallerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF5FCC1A6E9308002B6C44 /* FSCallerTests.m */; };
 		31DF5FD71A6E940D002B6C44 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31DF5FD61A6E940D002B6C44 /* keys.plist */; };
 		31DF5FEC1A6EB500002B6C44 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF5FDA1A6EB500002B6C44 /* AFHTTPRequestOperation.m */; };
@@ -50,7 +49,6 @@
 		31DF5FB41A6E9308002B6C44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		31DF5FB51A6E9308002B6C44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		31DF5FBD1A6E9308002B6C44 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		31DF5FC01A6E9308002B6C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		31DF5FC61A6E9308002B6C44 /* FSCallerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSCallerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DF5FCB1A6E9308002B6C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31DF5FCC1A6E9308002B6C44 /* FSCallerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSCallerTests.m; sourceTree = "<group>"; };
@@ -93,6 +91,7 @@
 		31DF60061A6EB50B002B6C44 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		31DF600F1A6EB5E8002B6C44 /* FlightStatsCaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightStatsCaller.h; sourceTree = "<group>"; };
 		31DF60101A6EB5E8002B6C44 /* FlightStatsCaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightStatsCaller.m; sourceTree = "<group>"; };
+		31DF60121A6EDEA3002B6C44 /* FSCaller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FSCaller-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +140,6 @@
 				31DF600F1A6EB5E8002B6C44 /* FlightStatsCaller.h */,
 				31DF60101A6EB5E8002B6C44 /* FlightStatsCaller.m */,
 				31DF5FBD1A6E9308002B6C44 /* Images.xcassets */,
-				31DF5FBF1A6E9308002B6C44 /* LaunchScreen.xib */,
 				31DF5FB01A6E9308002B6C44 /* Supporting Files */,
 			);
 			path = FSCaller;
@@ -150,6 +148,7 @@
 		31DF5FB01A6E9308002B6C44 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				31DF60121A6EDEA3002B6C44 /* FSCaller-Prefix.pch */,
 				31DF5FB11A6E9308002B6C44 /* Info.plist */,
 				31DF5FD61A6E940D002B6C44 /* keys.plist */,
 				31DF5FB21A6E9308002B6C44 /* main.m */,
@@ -306,7 +305,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31DF5FC11A6E9308002B6C44 /* LaunchScreen.xib in Resources */,
 				31DF5FBE1A6E9308002B6C44 /* Images.xcassets in Resources */,
 				31DF5FD71A6E940D002B6C44 /* keys.plist in Resources */,
 			);
@@ -366,17 +364,6 @@
 			targetProxy = 31DF5FC71A6E9308002B6C44 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		31DF5FBF1A6E9308002B6C44 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				31DF5FC01A6E9308002B6C44 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		31DF5FCE1A6E9308002B6C44 /* Debug */ = {

@@ -8,6 +8,18 @@
 
 #import "AFHTTPSessionManager.h"
 
+@class FlightStatsCaller;
+
+@protocol FlightStatsCallerDelegate <NSObject>
+
+@optional
+
+
+
+@end
+
 @interface FlightStatsCaller : AFHTTPSessionManager
+
+@property (nonatomic, weak) id <FlightStatsCallerDelegate> delegate;
 
 @end

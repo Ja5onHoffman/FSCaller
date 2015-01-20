@@ -17,6 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"keys" ofType:@"plist"];
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    self.FlightStatsAPIKey = [dict objectForKey:@"FLIGHTSTATS_API_KEY"];
+    self.FlightStatsAppID  = [dict objectForKey:@"FLIGHTSTATS_APP_ID"];
+    
+    NSLog(@"ID %@", self.FlightStatsAppID);
+    NSLog(@"KEY %@", self.FlightStatsAPIKey);
+    
     return YES;
 }
 

@@ -1,0 +1,17 @@
+//
+//  FSCaller-Prefix.pch
+//  FSCaller
+//
+//  Created by Jason Hoffman on 1/20/15.
+//  Copyright (c) 2015 JHM. All rights reserved.
+//
+
+#ifndef FSCaller_FSCaller_Prefix_pch
+#define FSCaller_FSCaller_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "AFNetworking.h"
+
+#endif
