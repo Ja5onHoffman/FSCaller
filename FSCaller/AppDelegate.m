@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TestViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
     NSString *path = [[NSBundle mainBundle] pathForResource:@"keys" ofType:@"plist"];
     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
@@ -25,6 +29,11 @@
     
     NSLog(@"ID %@", self.FlightStatsAppID);
     NSLog(@"KEY %@", self.FlightStatsAPIKey);
+    
+    self.tvc = [[TestViewController alloc] init];
+    self.window.rootViewController = self.tvc;
+    
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

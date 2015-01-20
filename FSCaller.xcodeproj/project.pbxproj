@@ -30,6 +30,7 @@
 		31DF600D1A6EB50B002B6C44 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF60041A6EB50B002B6C44 /* UIRefreshControl+AFNetworking.m */; };
 		31DF600E1A6EB50B002B6C44 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF60061A6EB50B002B6C44 /* UIWebView+AFNetworking.m */; };
 		31DF60111A6EB5E8002B6C44 /* FlightStatsCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF60101A6EB5E8002B6C44 /* FlightStatsCaller.m */; };
+		31DF60151A6EE365002B6C44 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF60141A6EE365002B6C44 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		31DF600F1A6EB5E8002B6C44 /* FlightStatsCaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightStatsCaller.h; sourceTree = "<group>"; };
 		31DF60101A6EB5E8002B6C44 /* FlightStatsCaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightStatsCaller.m; sourceTree = "<group>"; };
 		31DF60121A6EDEA3002B6C44 /* FSCaller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FSCaller-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		31DF60131A6EE365002B6C44 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		31DF60141A6EE365002B6C44 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				31DF5FB51A6E9308002B6C44 /* AppDelegate.m */,
 				31DF600F1A6EB5E8002B6C44 /* FlightStatsCaller.h */,
 				31DF60101A6EB5E8002B6C44 /* FlightStatsCaller.m */,
+				31DF60131A6EE365002B6C44 /* TestViewController.h */,
+				31DF60141A6EE365002B6C44 /* TestViewController.m */,
 				31DF5FBD1A6E9308002B6C44 /* Images.xcassets */,
 				31DF5FB01A6E9308002B6C44 /* Supporting Files */,
 			);
@@ -333,6 +338,7 @@
 				31DF5FF11A6EB500002B6C44 /* AFURLConnectionOperation.m in Sources */,
 				31DF600A1A6EB50B002B6C44 /* UIButton+AFNetworking.m in Sources */,
 				31DF60081A6EB50B002B6C44 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				31DF60151A6EE365002B6C44 /* TestViewController.m in Sources */,
 				31DF5FF01A6EB500002B6C44 /* AFSecurityPolicy.m in Sources */,
 				31DF60111A6EB5E8002B6C44 /* FlightStatsCaller.m in Sources */,
 				31DF600D1A6EB50B002B6C44 /* UIRefreshControl+AFNetworking.m in Sources */,
