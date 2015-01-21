@@ -31,6 +31,7 @@
 		31DF600E1A6EB50B002B6C44 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF60061A6EB50B002B6C44 /* UIWebView+AFNetworking.m */; };
 		31DF60111A6EB5E8002B6C44 /* FlightStatsCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF60101A6EB5E8002B6C44 /* FlightStatsCaller.m */; };
 		31DF60151A6EE365002B6C44 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DF60141A6EE365002B6C44 /* TestViewController.m */; };
+		31DF60171A704997002B6C44 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31DF60161A704997002B6C44 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		31DF60121A6EDEA3002B6C44 /* FSCaller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FSCaller-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		31DF60131A6EE365002B6C44 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		31DF60141A6EE365002B6C44 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		31DF60161A704997002B6C44 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				31DF5FB11A6E9308002B6C44 /* Info.plist */,
 				31DF5FD61A6E940D002B6C44 /* keys.plist */,
 				31DF5FB21A6E9308002B6C44 /* main.m */,
+				31DF60161A704997002B6C44 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			files = (
 				31DF5FBE1A6E9308002B6C44 /* Images.xcassets in Resources */,
 				31DF5FD71A6E940D002B6C44 /* keys.plist in Resources */,
+				31DF60171A704997002B6C44 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +399,8 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -435,6 +441,8 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -452,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = FSCaller/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -462,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = FSCaller/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -521,6 +531,7 @@
 				31DF5FD21A6E9308002B6C44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31DF5FD31A6E9308002B6C44 /* Build configuration list for PBXNativeTarget "FSCallerTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +540,7 @@
 				31DF5FD51A6E9308002B6C44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

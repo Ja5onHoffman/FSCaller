@@ -27,12 +27,10 @@
     self.FlightStatsAPIKey = [dict objectForKey:@"FLIGHTSTATS_API_KEY"];
     self.FlightStatsAppID  = [dict objectForKey:@"FLIGHTSTATS_APP_ID"];
     
-    NSLog(@"ID %@", self.FlightStatsAppID);
-    NSLog(@"KEY %@", self.FlightStatsAPIKey);
-    
     self.tvc = [[TestViewController alloc] init];
     self.window.rootViewController = self.tvc;
     
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
     return YES;

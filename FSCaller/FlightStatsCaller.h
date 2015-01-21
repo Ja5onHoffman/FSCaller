@@ -15,7 +15,6 @@
 @optional
 
 
-
 @end
 
 @interface FlightStatsCaller : AFHTTPSessionManager

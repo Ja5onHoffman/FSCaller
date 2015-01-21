@@ -16,11 +16,20 @@
 
 - (void)loadView
 {
-    CGRect rect = [[UIScreen mainScreen] bounds];
-    UIView *view = [[UIView alloc] initWithFrame:rect];
-    
+
+    CGRect frame = [[UIScreen mainScreen] bounds];
+    UIView *view = [[UIView alloc] initWithFrame:frame];
+    view.backgroundColor = [UIColor grayColor];
     self.view = view;
-    self.view.backgroundColor = [UIColor redColor];
+    
+    CGRect buttonFrame = CGRectMake(50, 50, 200, 100);
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button setFrame:buttonFrame];
+    [button setTitle:@"Go" forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor greenColor];
+    button.titleLabel.font = [UIFont fontWithName:@"Arial" size:35];
+    
+    [view addSubview:button];
 }
 
 - (void)viewDidLoad {
@@ -31,6 +40,13 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+// FSCaller
+
+- (void)callFSCaller
+{
+    
 }
 
 @end
