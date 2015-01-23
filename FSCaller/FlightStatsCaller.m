@@ -9,9 +9,6 @@
 #import "FlightStatsCaller.h"
 
 static NSString * const FlightStatsBaseURL = @"https://api.flightstats.com/flex";
-static NSString * const FlightStatsTestURL = @"https://api.flightstats.com/flex/weather/rest/v1/json/all/";
-
-
 @interface FlightStatsCaller()
 
 @property (nonatomic, strong) NSString *FlightStatsAppID;
@@ -45,20 +42,21 @@ static NSString * const FlightStatsTestURL = @"https://api.flightstats.com/flex/
     return self;
 }
 
-// Products: all, metar, taf, zone
+// Products: all, metar, taf, zf (zone forecast)
 - (void)retreiveProduct:(NSString *)product forAirport:(NSString *)airport completionHandler:(void(^)(NSDictionary *resp))completionHandler
 {
+    // This version gets API key and appID from untracked .plist file.
+    // Remove this code to use your own appID and API key.
     NSString *path = [[NSBundle mainBundle] pathForResource:@"keys" ofType:@"plist"];
     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
     
     self.FlightStatsAPIKey = [dict objectForKey:@"FLIGHTSTATS_API_KEY"];
     self.FlightStatsAppID  = [dict objectForKey:@"FLIGHTSTATS_APP_ID"];
     
-    NSString *url = [NSString stringWithFormat:@"%@/%@/%@/%@", FlightStatsBaseURL, airport, @"rest", product];
-    NSLog(@"url: %@", url);
+    NSString *url = [NSString stringWithFormat:@"%@/%@/%@/%@", FlightStatsBaseURL, @"weather/rest/v1/json", product, airport];
     
-    [self.requestSerializer setValue:self.FlightStatsAppID forHTTPHeaderField:@"appKey"];
-    [self.requestSerializer setValue:self.FlightStatsAPIKey forHTTPHeaderField:@"appId"];
+    [self.requestSerializer setValue:self.FlightStatsAPIKey forHTTPHeaderField:@"appKey"];
+    [self.requestSerializer setValue:self.FlightStatsAppID forHTTPHeaderField:@"appId"];
     
     [self GET:url parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         
@@ -69,6 +67,5 @@ static NSString * const FlightStatsTestURL = @"https://api.flightstats.com/flex/
         NSLog(@"There was an error");
     }];
 }
-
 
 @end

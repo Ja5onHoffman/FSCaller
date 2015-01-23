@@ -39,6 +39,7 @@
     CGRect textFrame1 = CGRectMake(50, 200, 200, 40);
     self.productField = [[UITextField alloc] initWithFrame:textFrame1];
     self.productField.placeholder = @"Weather product";
+    self.productField.text = @"metar";
     self.productField.returnKeyType = UIReturnKeyDone;
     self.productField.backgroundColor = [UIColor whiteColor];
     [view addSubview:self.productField];
@@ -46,6 +47,7 @@
     CGRect textFrame2 = CGRectMake(50, 300, 200, 40);
     self.airportField = [[UITextField alloc] initWithFrame:textFrame2];
     self.airportField.placeholder = @"Airport code";
+    self.airportField.text = @"CLT";
     self.airportField.returnKeyType = UIReturnKeyDone;
     self.airportField.backgroundColor = [UIColor whiteColor];
     [view addSubview:self.airportField];
@@ -72,13 +74,6 @@
     [self.fsc retreiveProduct:product forAirport:airport completionHandler:^(NSDictionary *resp) {
         NSLog(@"Response: %@", resp);
     }];
-}
-
-// FSCallerDelegate
-
-- (void)didReceiveResponse
-{
-    NSLog(@"It worked");
 }
 
 @end
