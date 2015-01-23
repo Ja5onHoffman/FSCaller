@@ -14,11 +14,12 @@
 
 @optional
 
-
+- (void)retreiveProduct:(NSString *)product forAirport:(NSString *)airport completionHandler:(void(^)( NSDictionary *resp))completionHandler;
 @end
 
 @interface FlightStatsCaller : AFHTTPSessionManager
 
 @property (nonatomic, weak) id <FlightStatsCallerDelegate> delegate;
 
+- (void)retreiveProduct:(NSString *)product forAirport:(NSString *)airport completionHandler:(void(^)( NSDictionary *resp))completionHandler;
 @end

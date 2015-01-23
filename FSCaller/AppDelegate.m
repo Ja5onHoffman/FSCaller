@@ -21,12 +21,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // Override point for customization after application launch.
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"keys" ofType:@"plist"];
-    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
-    
-    self.FlightStatsAPIKey = [dict objectForKey:@"FLIGHTSTATS_API_KEY"];
-    self.FlightStatsAppID  = [dict objectForKey:@"FLIGHTSTATS_APP_ID"];
-    
     self.tvc = [[TestViewController alloc] init];
     self.window.rootViewController = self.tvc;
     
