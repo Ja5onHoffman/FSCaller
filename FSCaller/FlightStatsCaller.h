@@ -12,14 +12,16 @@
 
 @protocol FlightStatsCallerDelegate <NSObject>
 
-- (void)retreiveProduct:(NSString *)product forAirport:(NSString *)airport completionHandler:(void(^)( NSDictionary *resp))completionHandler;
+- (void)retrieveProduct:(NSString *)product forAirport:(NSString *)airport completionHandler:(void(^)( NSDictionary *resp))completionHandler;
 
 @end
 
-@interface FlightStatsCaller : AFHTTPSessionManager
+@interface FlightStatsCaller : AFHTTPSessionManager <NSURLSessionDelegate>
 
 @property (nonatomic, weak) id <FlightStatsCallerDelegate> delegate;
 
-- (void)retreiveProduct:(NSString *)product forAirport:(NSString *)airport completionHandler:(void(^)( NSDictionary *resp))completionHandler;
++ (FlightStatsCaller *)sharedFlightStatsCaller;
+- (instancetype)initWithBaseURL:(NSURL *)url;
+- (void)retrieveProduct:(NSString *)product forAirport:(NSString *)airport completionHandler:(void(^)( NSDictionary *resp))completionHandler;
 
 @end

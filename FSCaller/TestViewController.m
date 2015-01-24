@@ -71,7 +71,7 @@
     NSString *product = self.productField.text;
     NSString *airport = self.airportField.text;
     
-    [self.fsc retreiveProduct:product forAirport:airport completionHandler:^(NSDictionary *resp) {
+    [self.fsc retrieveProduct:product forAirport:airport completionHandler:^(NSDictionary *resp) {
         NSLog(@"Response: %@", resp);
     }];
 }

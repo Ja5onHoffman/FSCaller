@@ -43,7 +43,7 @@ static NSString * const FlightStatsBaseURL = @"https://api.flightstats.com/flex"
 }
 
 // Products: all, metar, taf, zf (zone forecast)
-- (void)retreiveProduct:(NSString *)product forAirport:(NSString *)airport completionHandler:(void(^)(NSDictionary *resp))completionHandler
+- (void)retrieveProduct:(NSString *)product forAirport:(NSString *)airport completionHandler:(void(^)(NSDictionary *resp))completionHandler
 {
     // This version gets API key and appID from untracked .plist file.
     // Remove this code to use your own appID and API key.
